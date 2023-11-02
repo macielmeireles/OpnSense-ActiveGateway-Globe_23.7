@@ -32,7 +32,7 @@ Script for OpnSense | Add a globe icon to the right of the active gateway name i
 5. Test
 
 
-## Detailed Installation Guide (En)
+## Detailed Installation Guide 
 
 1. Enable SSH on OpnSense and access SSH<br />
    1.1 Enable SSH on OpnSense: System > Settings > Administration <br />
@@ -55,7 +55,7 @@ Script for OpnSense | Add a globe icon to the right of the active gateway name i
 
 
 
-## Quick Installation Guide (pt-Br)
+## Guia Rápido de Instalação (pt-Br)
 1. Ative o SSH no OpnSense
 2. Baixe o arquivo `install.sh`
 3. Defina a permissão
@@ -63,7 +63,7 @@ Script for OpnSense | Add a globe icon to the right of the active gateway name i
 5. Teste
 
 
-## Detailed Installation Guide (pt-Br)
+## Guia Detalhado de Instalação 
 
 1. Ative o SSH no OpnSense e acesse via SSH<br />
    1.1 Ative o SSH no OpnSense: System > Settings > Administration <br />
