@@ -50,8 +50,15 @@ Script for OpnSense | Add a globe icon to the right of the active gateway name i
    4.1 In terminal, run the command to run the installion: `./install.sh`<br />
 
 5. Test:<br />
-   5.1 Open your opnSense in your Browser<br />
+   5.1 Open your opnSense in your Browser<br /><br /><br />
    
+
+### Check version compatibility:
+   To check compatibility, use: ./install --check <br /><br />
+
+### Restore Guide:
+   To restore, use: ./install --restore <br /><br /><br />
+
 
 
 
@@ -81,11 +88,12 @@ Script for OpnSense | Add a globe icon to the right of the active gateway name i
    4.1 No terminal, execute o comando para iniciar a instalação: `./install.sh`<br />
 
 5. Teste:<br />
-   5.1 Abra o OpnSense no seu navegador <br />
+   5.1 Abra o OpnSense no seu navegador <br /><br /><br />
 
 
 
+### Verificando a Compatibilidade: 
+   To check compatibility, use: ./install --check <br /><br />
 
-
-
-
+### Guia de Restauração:
+   Para restaurar, basta usar: ./install --restore <br /> 
