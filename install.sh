@@ -2,7 +2,7 @@
 
 # OpnSense Active Gateway Globe Script
 # Version: 0.4 (beta)
-# Date: 01/11/2023
+# Date: 06/11/2023
 # Author: Maciel Meireles
 # GitHub: https://github.com/macielmeireles/OpnSense-ActiveGateway-Globe
 
