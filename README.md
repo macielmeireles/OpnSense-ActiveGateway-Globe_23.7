@@ -52,6 +52,8 @@ Script for OpnSense | Add a globe icon to the right of the active gateway name i
 5. Test:<br />
    5.1 Open your opnSense in your Browser<br /><br /><br />
    
+### Help
+   To help, use: ./install --help <br /><br />
 
 ### Check version compatibility:
    To check compatibility, use: ./install --check <br /><br />
@@ -90,10 +92,11 @@ Script for OpnSense | Add a globe icon to the right of the active gateway name i
 5. Teste:<br />
    5.1 Abra o OpnSense no seu navegador <br /><br /><br />
 
-
+### Ajuda:
+   Para ajuda, use: ./install --help <br /><br />
 
 ### Verificando a Compatibilidade: 
-   To check compatibility, use: ./install --check <br /><br />
+   Para verificar a compatibilidade, use: ./install --check <br /><br />
 
 ### Guia de Restauração:
    Para restaurar, basta usar: ./install --restore <br /> 
