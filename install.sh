@@ -1,6 +1,3 @@
-Sim, você está correto. "Tested versions" pode ser uma escolha melhor para o nome da variável, pois indica que as versões listadas foram testadas e são compatíveis com o script. Aqui está o código atualizado:
-
-```bash
 #!/bin/sh
 
 # OpnSense Active Gateway Globe Script
@@ -72,5 +69,3 @@ case "$1" in
         echo "Script executed successfully!"
         ;;
 esac
-```
-Espero que isso ajude! Se você tiver mais perguntas, fique à vontade para perguntar.
