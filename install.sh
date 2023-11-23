@@ -4,10 +4,10 @@
 # Version: 0.5 (beta)
 # Date: 11/23/2023
 # Author: Maciel Meireles
-# GitHub: https://github.com/macielmeireles/OpnSense-ActiveGateway-Globe
+# GitHub: https://github.com/macielmeireles
 
 # Define the tested versions of OPNsense
-tested_versions=("OPNsense 23.7.7_3" "OPNsense 23.7.8_1")
+tested_versions="OPNsense 23.7.7_3 OPNsense 23.7.8_1"
 
 # Define the names of the files to be downloaded
 gateway_file="get_default_gateway_v.02.php"
@@ -42,30 +42,36 @@ case "$1" in
         ;;
     --check)
         # Check if the current version is in the tested versions
-        if [[ ! " ${tested_versions[@]} " =~ " ${current_version} " ]]; then
-            echo "The current version of OPNsense ($current_version) is not in the tested versions (${tested_versions[*]}). Please update OPNsense."
-        else
-            echo "The current version of OPNsense ($current_version) is in the tested versions."
-        fi
+        for version in $tested_versions
+        do
+            if [ "$current_version" = "$version" ]; then
+                echo "The current version of OPNsense ($current_version) is in the tested versions."
+                exit 0
+            fi
+        done
+        echo "The current version of OPNsense ($current_version) is not in the tested versions ($tested_versions). Please update OPNsense."
         ;;
     *)
         # Check if the current version is in the tested versions
-        if [[ ! " ${tested_versions[@]} " =~ " ${current_version} " ]]; then
-            echo "The current version of OPNsense ($current_version) is not in the tested versions (${tested_versions[*]}). Please update OPNsense before running this script."
-            exit 1
-        fi
+        for version in $tested_versions
+        do
+            if [ "$current_version" = "$version" ]; then
+                # Change to the desired directory
+                cd /usr/local/www/widgets/widgets/
 
-        # Change to the desired directory
-        cd /usr/local/www/widgets/widgets/
+                # Download the files and rename them
+                fetch -o get_default_gateway.php $gateway_url
+                fetch -o script_change_widget.php $widget_url
 
-        # Download the files and rename them
-        fetch -o get_default_gateway.php $gateway_url
-        fetch -o script_change_widget.php $widget_url
-
-        # Execute the PHP script
-        php script_change_widget.php
-        echo ""
-        echo ""
-        echo "Script executed successfully!"
+                # Execute the PHP script
+                php script_change_widget.php
+                echo ""
+                echo ""
+                echo "Script executed successfully!"
+                exit 0
+            fi
+        done
+        echo "The current version of OPNsense ($current_version) is not in the tested versions ($tested_versions). Please update OPNsense before running this script."
+        exit 1
         ;;
 esac
