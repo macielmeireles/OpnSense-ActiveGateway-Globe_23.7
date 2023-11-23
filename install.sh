@@ -7,7 +7,7 @@
 # GitHub: https://github.com/macielmeireles/OpnSense-ActiveGateway-Globe
 
 # Define the tested versions of OPNsense
-tested_versions="OPNsense 23.7.7_3 OPNsense 23.7.8_1"
+tested_versions="OPNsense 23.7.7_3 OPNsense 23.7.8_1 OPNsense 23.7.9"
 
 # Define the names of the files to be downloaded
 gateway_file="get_default_gateway_v.02.php"
