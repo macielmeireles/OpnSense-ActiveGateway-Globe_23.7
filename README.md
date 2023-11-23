@@ -22,8 +22,6 @@ Script for OpnSense | Add a globe icon to the right of the active gateway name i
 - SSH terminal
 - Download the `install.sh` from this GitHub repository (last stable version) to your machine with OPNsense
 
-
-
 ## Quick Installation Guide (En)
 1. Enable SSH on OpnSense
 2. Download the file `install.sh`
@@ -60,6 +58,13 @@ Script for OpnSense | Add a globe icon to the right of the active gateway name i
 
 ### Restore Guide:
    To restore, use: ./install --restore <br /><br /><br />
+
+### Update of install.sh:
+   To update install.sh, use in terminal the command:<br />
+   `cd /usr/local/www/widgets/widgets/ && rm install.sh && fetch https://raw.githubusercontent.com/macielmeireles/OpnSense-ActiveGateway-Globe/main/install.sh && chmod +x install.sh && ./install.sh` <br /><br /><br />
+
+
+
 
 
 
@@ -100,3 +105,7 @@ Script for OpnSense | Add a globe icon to the right of the active gateway name i
 
 ### Guia de Restauração:
    Para restaurar, basta usar: ./install --restore <br /> 
+
+### Atualização do Install.sh:
+   Para atualizar o install.sh, use o seguinte comando no terminal:<br /> 
+   `cd /usr/local/www/widgets/widgets/ && rm install.sh && fetch https://raw.githubusercontent.com/macielmeireles/OpnSense-ActiveGateway-Globe/main/install.sh && chmod +x install.sh && ./install.sh` <br /> <br /> 
